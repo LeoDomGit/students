@@ -13,8 +13,8 @@ function Sidebar() {
         },
       });
     const logOut=()=>{
-        if(localStorage.getItem('token')){
-            localStorage.removeItem('token');
+        if(localStorage.getItem('id')){
+            localStorage.removeItem('id');
             Toast.fire({
                 icon: "success",
                 title: "Tạm biệt !",

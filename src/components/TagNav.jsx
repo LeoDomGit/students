@@ -10,7 +10,7 @@ function TagNav(props) {
               <h3 className="f_s_30 f_w_700 text_white">{props.name}</h3>
               <ol className="breadcrumb page_bradcam mb-0">
                 <li className="breadcrumb-item">
-                  <a href="#">Teachers </a>
+                  <a href="#">Students </a>
                 </li>
                 <li className="breadcrumb-item active">{props.name}</li>
               </ol>

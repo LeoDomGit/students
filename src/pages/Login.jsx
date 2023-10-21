@@ -94,7 +94,7 @@ function Login() {
                   }else{
                     Toast.fire({
                       icon: "error",
-                      title: "Vui lòng đăng nhập bằng tài khoản giảng viên",
+                      title: "Vui lòng đăng nhập bằng tài khoản học viên",
                     });
                   }
                  

@@ -32,7 +32,7 @@ function Login() {
     if (email != "" && password != "") {
       axios({
         method: "post",
-        url: url + "checkLogin",
+        url: url + "checkLoginStudent",
         data: {
           email: email,
           password: password,
@@ -43,8 +43,8 @@ function Login() {
             icon: "success",
             title: "Đăng nhập thành công",
           }).then(() => {
-            localStorage.setItem("token", res.data.token);
-            window.location.replace("/edu");
+            localStorage.setItem("id", res.data.id);
+            window.location.replace("/home");
           });
         } else if (res.data.check == false) {
           if (res.data.msg.email) {
